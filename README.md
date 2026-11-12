@@ -1,13 +1,8 @@
-# Supercell ID Token Üretici (Python / FastAPI)
+# Supercell ID Token Üretici (Render & GitHub Uyumlu)
 
-## Kurulum ve Çalıştırma
-1. Bu klasör içerisindeyken komut satırını açın.
-2. Gerekli kütüphaneleri yükleyin:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Uygulamayı başlatın:
-   ```bash
-   python main.py
-   ```
-4. Tarayıcınızda `http://127.0.0.1:8000` adresine giderek e-postanızı girin, kodunuzu doğrulayın ve HDX formatındaki token'ınızı anında alın!
+## Render Üzerinde Yayınlama Adımları:
+1. Bu projeyi bir GitHub repository (depo) olarak yükleyin.
+2. [Render Dashboard](https://dashboard.render.com/) adresine gidin.
+3. **New > Web Service** seçeneğine tıklayın.
+4. GitHub deponuzu seçip bağlayın.
+5. **Runtime**: `Docker` seçin ve servisi oluşturun. Render otomatik olarak `Dockerfile` ile projeyi derleyip size özel web linkini (`https://...onrender.com`) verecektir.

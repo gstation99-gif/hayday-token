@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supercell ID Token Üretici</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --text: #f8fafc; --muted: #94a3b8; --border: #334155; --primary: #3b82f6; --success: #10b981; }
@@ -22,17 +23,15 @@
 <body>
     <div class="container">
         <div class="card">
-            <h2>🔑 Supercell ID Token Çıkarıcı</h2>
+            <h2>🔑 Supercell ID Token Üretici (Bulut)</h2>
             <p style="color: var(--muted); font-size: 13px;">E-posta adresinizi girin, mailinize gelen 6 haneli kodu yazarak HDX botuna uyumlu JWT token'ınızı anında alın.</p>
             
-            <!-- Adım 1: E-posta Gönder -->
             <div id="step1">
                 <label>Supercell ID E-Posta Adresi</label>
                 <input type="email" id="email" placeholder="ornek@gmail.com">
                 <button onclick="sendCode()">E-Postaya Kod Gönder</button>
             </div>
 
-            <!-- Adım 2: Kodu Doğrula -->
             <div id="step2" style="display: none; margin-top: 15px;">
                 <label>E-Postanıza Gelen 6 Haneli Onay Kodu</label>
                 <input type="text" id="code" placeholder="123456">
